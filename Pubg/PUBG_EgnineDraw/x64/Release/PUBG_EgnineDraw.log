@@ -1,0 +1,13 @@
+﻿  Assembling Function.asm...
+  dllmain.cpp
+  Draw.cpp
+  Engine.cpp
+  Func.cpp
+  GameHack.cpp
+  matrix.cpp
+  quat.cpp
+  rotator.cpp
+  transform.cpp
+  vector.cpp
+    正在创建库 ..\bin\PSI.lib 和对象 ..\bin\PSI.exp
+  PUBG_EgnineDraw.vcxproj -> C:\Users\Administrator\Desktop\PUBG_EgnineDraw\bin\PSI.dll

@@ -1,0 +1,4 @@
+// 提示文件帮助 Visual Studio IDE 解释 Visual C++ 标识符,
+// 如函数和宏的名称。
+// 有关详细信息，请参见 https://go.microsoft.com/fwlink/?linkid=865984
+#define DefClass(structname, derivedclass, members, __VA_ARGS__) __declspec(align(8)) class structname : public derivedclass { private: static constexpr unsigned AlignNeeded = 8; static constexpr unsigned BaseOffset = sizeof(derivedclass); static_assert(sizeof(derivedclass) % AlignNeeded == 0, "DerivedClass is not aligned"); public: structname(){} union {members; uint8_t _zpad[AlignNeeded];}; __VA_ARGS__ };
